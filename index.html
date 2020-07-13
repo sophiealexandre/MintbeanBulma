@@ -4,10 +4,31 @@
   <meta charset="UTF-8">
   <title>CodePen - bulma-grid</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.26/css/bulma.css">
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+
+<!-- TITLE -->
+
+<div class="titles">
+  <div class="title">
+    <h1 class="container" id="title">.title</h1>
+  </div>
+</div>
+
+<!-- Choose if you want a title -->
+<div>
+  <button class="add button is-success" onclick="addTitle()">
+    Add title
+  </button>
+  <button class="remove button is-danger"onclick="removeTitle()">
+    Remove title
+  </button>
+  <!-- Enter your title -->
+  <input type="text" id="myInput" oninput="myTitle()">
+</div>
+
 <div class="columns">
   <div class="column">
     <p class="container">.column</p>
@@ -49,10 +70,10 @@
 </div>
 
 <div>
-  <button class="add button is-success" onclick="tata()">
+  <button class="add button is-success" onclick="addRow()">
     Add row
   </button>
-  <button class="remove button is-danger" onclick="tata()">
+  <button class="remove button is-danger" onclick="removeRow()">
     Remove row
   </button>
 </div>
